@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Question for You</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serief;
+            background: linear-gradient(135deg, #ffd6e7, #ffb6c9);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            background: white;
+            padding: 40px 25px;
+            border-radius: 25px;
+            text-align: center;
+            width: 90%;
+            max-width: 420px;
+            box-shadow: 0 10px 30px #d77b9b55;
+            position: relative;
+            z-index: 2;
+        }
+
+        .heart {
+            font-size: 65px;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        h1 {
+            color: #e75480;
+            margin: 20px;
+            font-size: 27px;
+        }
+
+        p {
+            color: #777;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        button {
+            border: none;
+            padding: 13px 28px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #yes {
+            background: #eeeeee;
+            color: #777;
+        }
+
+        #message {
+            display: none;
+            margin-top: 25px;
+            color: #e75480;
+            font-size: 18px;
+            font-weight: bold;
+            line-weight: 1.6;
+        }
+
+        .floating-heart {
+            position: absolute;
+            color: white;
+            font-size: 22px;
+            animation: float 6s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes float {
+          0% {
+            transform: translateY(100vh) rotate(0deg);
+          }  
+          100% {
+            transform: translateY(-10vh) rotate(360deg);
+          }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heart"></div>
+
+        <div class="message">
+            Hai, cantikku.
+
+        <br><br>
+        
+        Meskipun kita belum lama kenal...
+        Tapi, entah kenapa, semenjak kenal kamu,
+        aku merasa hari-hariku menjadi jauh lebih indah.
+
+        <br><br>
+
+        Kamu bikin aku senyum-senyum sendiri
+        dan kamu membuat aku merasakan hal
+        yang benar-benar belum pernah aku rasakan sebelumnya,
+        yaitu perasaan dihargai dan menyamai effort ku
+        yang tidak seberapa itu
+
+        <br><br>
+
+        <strong>
+        Jadi, tolong jawab pertanyaan di link di bawah ini, ya?
+        </strong>
+        
+    </div>
+
+    <div class="signature">
+        With love, <br>
+        Aksara Dewangga.
+    </div>
+
+    <a class="button"
+        href="https://forms.gle/yVtrBBpyWBzokaiW6"
+        target="_blank">
+        PLEASE GIVE ME AN ANSWER!
+    </a>
+
+    <div class="footer">
+        Aku buat ini tulus dari hati yang paling dalam,
+        khusus untuk kamu seorang.
+    </div>
+
+</div>
+
+</body>
+</html>
